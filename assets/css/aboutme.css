@@ -1,0 +1,60 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/*FONT FAMILIIES: 
+
+font-family: 'Amiri', serif;
+font-family: 'Barlow', sans-serif;
+font-family: 'Bitter', serif;
+font-family: 'Libre Baskerville', serif;
+*/
+
+:root {
+    --light:#FFB0AB;
+    --primary:#FF988F;
+    --secondary: #8fffc1;
+    --dark: #004F4E;
+    --tertiary: #b32519;
+    
+}
+
+header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: white; 
+    color: black;
+    margin-bottom: 0.5%;
+}
+
+header h1 {
+    text-align: center;
+}
+img {
+    max-width: 400px;
+    max-height: 600px;
+    border: 5px solid var(--dark);
+}
+
+.aboutme {
+    flex-direction: column;
+    display: flex;
+}
+
+.description {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.subtitle {
+    font-family: 'Bitter', serif;
+    justify-items: space-between;
+}
+
+.paragraph {
+    font-family: 'Barlow', sans-serif;
+    justify-items: space-between;
+}

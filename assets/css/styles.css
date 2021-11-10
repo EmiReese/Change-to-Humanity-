@@ -1,26 +1,114 @@
+/* HEADER */
+* {
+    box-sizing: border-box;
+}
+
+/*FONT FAMILIIES: 
+
+font-family: 'Amiri', serif;
+font-family: 'Barlow', sans-serif;
+font-family: 'Bitter', serif;
+font-family: 'Libre Baskerville', serif;
+*/
+
+:root {
+    --light:#FFB0AB;
+    --primary:#FF988F;
+    --secondary: #8fffc1;
+    --dark: #004F4E;
+    --tertiary: #b32519;
+    
+}
+header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: white; 
+    color: black;
+    margin-bottom: 0.5%;
+}
+header #logo {
+    margin-left: 5%;
+    font-size: 1.5em;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.box {
+    margin: 0;
+}
+
+header #about-us {
+    margin-right: 5%;  
+    color: black; 
+    font-family: 'Amiri', serif;
+}
 
 body {
-    display: grid;
-    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
-}
-.container{
-    display: flex; 
-    border: 1px solid black;
-    width: 100%;
-    height: 100px;
-    background-color: white; 
-    align-content: center:
-}
+    background-image: url(../image/communityart.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
-.box1 {
-    flex: 1;
-    order: 1;
-   
+}
+/* MISSION STATEMENT */
+.mission-section {
+    background-color: white;
+    width: 40%;
+    padding: 0.5%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin-left: 30%;
+    margin-top: 15%;
+    border-radius: 10px;
+    opacity: 0.9;
 }
 
-.box2 {
-    flex: 1;
-    order: 2;
+
+.mission-section .title {
+    text-align: center;
+    font-family: 'Amiri', serif;
 }
 
+.mission-section .paragraph {
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+}
+
+/*PROJECTS*/
+
+.title {
+    font-family: 'Amiri', serif;
+}
+
+.paragraph {
+    font-family: 'Barlow', sans-serif;
+}
+@media screen and (max-width: 768px) {
+    .project-section{
+        flex-direction: column;
+        width: 75%;
+    }
+}
+
+.project-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+.section {
+    flex-basis: 350px;
+    border: 5px solid var(--dark);
+    text-align: center;
+    align-content: center;
+    background-color: white;
+    opacity: 0.9;
+    /* box-shadow: 20px 0px 20px -10px rgba(0,0,0,0.75);
+    border-radius: 10px; */
+}
+
+/* FOOTER */
+
+footer {
+    color: lavender;
+}
