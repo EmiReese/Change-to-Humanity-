@@ -1,6 +1,9 @@
 
 * {
     box-sizing: border-box;
+    font-size: 16px;
+    background-color: #FFE5E2;
+
 }
 
 /*FONT FAMILIIES: 
@@ -21,16 +24,32 @@ font-family: 'Libre Baskerville', serif;
 }
 
 header {
-    display: flex; 
-    justify-content: space-between;
-    align-items: baseline;
-    background-color: white; 
-    color: black;
-    margin-bottom: 0.5%;
+    width: 100%;
+    height: 6.25rem;
+    font-family: 'Amiri', serif;
+    margin-bottom: 2%;
 }
-
 header h1 {
     text-align: center;
+    padding-top: .7%;
+    font-size: 3rem;
+    color: var(--dark);
+}
+
+.aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--dark);
+}
+.aboutus h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
+}
+.thefounder{
+    width: 35%;
+    height: 40%;
+    margin-left: 10%;
+    margin-right: 5%;
 }
 img {
     max-width: 400px;
@@ -38,23 +57,33 @@ img {
     border: 5px solid var(--dark);
 }
 
-.aboutme {
-    flex-direction: column;
+.chairman {
+    width: 35%;
+    height: 40%;
+    margin-left: 5%;
+    margin-right: 10%
+}
+
+.container {
     display: flex;
+    justify-content: center;
+    display: flex;
+    color: var(--dark);
 }
 
-.description {
-    display: inline-flex;
-    width: 100%;
-    justify-content: space-between;
+h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
 }
-
-.subtitle {
-    font-family: 'Bitter', serif;
-    justify-items: space-between;
+.matt-gammon {
+    width: 35%;
+    height: 60%;
+    justify-content: center;
 }
 
 .paragraph {
-    font-family: 'Barlow', sans-serif;
-    justify-items: space-between;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+
 }
