@@ -1,4 +1,4 @@
-/* HEADER */
+
 * {
     box-sizing: border-box;
 }
@@ -10,104 +10,123 @@ font-family: 'Bitter', serif;
 font-family: 'Libre Baskerville', serif;
 */
 
+
 :root {
     --light:#FFB0AB;
     --primary:#FF988F;
     --secondary: #8fffc1;
     --dark: #004F4E;
     --tertiary: #b32519;
-    
 }
+/* HEADER */ 
+
 header {
     display: flex; 
     justify-content: space-between;
     align-items: baseline;
     background-color: white; 
     color: black;
-    margin-bottom: 0.5%;
 }
-header #logo {
+
+header h1 {
     margin-left: 5%;
     font-size: 1.5em;
     font-family: 'Libre Baskerville', serif;
+    font-size: 2.5rem;
 }
 
 .box {
     margin: 0;
 }
 
-header #about-us {
+header .aboutus {
     margin-right: 5%;  
     color: black; 
     font-family: 'Amiri', serif;
 }
 
+/*body*/
 body {
     background-image: url(../image/communityart.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 
 }
+
 /* MISSION STATEMENT */
 .mission-section {
     background-color: white;
-    width: 40%;
+    width: 45%;
     padding: 0.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 30%;
-    margin-top: 15%;
+    margin-top: 5%;
     border-radius: 10px;
     opacity: 0.9;
 }
 
 
-.mission-section .title {
+.mission-section h2{
     text-align: center;
     font-family: 'Amiri', serif;
+    margin: 0;
 }
 
 .mission-section .paragraph {
     text-align: center;
     font-family: 'Barlow', sans-serif;
+    font-size: 1.2rem; 
+    font-weight: bold;
+    margin: 0;
+
 }
 
 /*PROJECTS*/
 
-.title {
-    font-family: 'Amiri', serif;
-}
-
-.paragraph {
-    font-family: 'Barlow', sans-serif;
-}
-@media screen and (max-width: 768px) {
-    .project-section{
-        flex-direction: column;
-        width: 75%;
-    }
-}
-
-.project-section {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 3%;
-}
-
-.section {
+.program {
     flex-basis: 350px;
     border: 5px solid var(--dark);
     text-align: center;
     align-content: center;
     background-color: white;
     opacity: 0.9;
-    /* box-shadow: 20px 0px 20px -10px rgba(0,0,0,0.75);
-    border-radius: 10px; */
+   
+}
+
+.program h2 {
+    font-family: 'Amiri', serif;
+}
+
+.paragraph {
+    font-family: 'Barlow', sans-serif;
+}
+
+.project-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
 }
 
 /* FOOTER */
 
 footer {
-    color: lavender;
+    color: purple;
+}
+
+/*MEDIA QUEREIES*/
+
+@media screen and (max-width: 768px) {
+  
+    .project-section{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        margin: auto 12.5%;
+        justify-content: center;
+    }
+    .mission-section {
+        padding: 1% 2%;
+    } 
 }

@@ -3,7 +3,7 @@
     box-sizing: border-box;
     font-size: 16px;
     background-color: #FFE5E2;
-
+    
 }
 
 /*FONT FAMILIIES: 
@@ -20,70 +20,72 @@ font-family: 'Libre Baskerville', serif;
     --secondary: #8fffc1;
     --dark: #004F4E;
     --tertiary: #b32519;
-    
 }
 
+/*HEADER*/
 header {
     width: 100%;
     height: 6.25rem;
     font-family: 'Amiri', serif;
-    margin-bottom: 2%;
 }
+
 header h1 {
     text-align: center;
-    padding-top: .7%;
+    padding-top: .5%;
     font-size: 3rem;
     color: var(--dark);
+    line-height: 1.5;
+    text-decoration: underline;
 }
 
-.aboutus {
+body {
+    color: var(--dark);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.members {
     display: flex;
     flex-wrap: wrap;
-    color: var(--dark);
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 5%;
 }
-.aboutus h3 {
+
+ h3 {
     font-family: 'Libre Baskerville', serif;
     font-size: 1.5rem;
-}
-.thefounder{
-    width: 35%;
-    height: 40%;
-    margin-left: 10%;
-    margin-right: 5%;
-}
-img {
-    max-width: 400px;
-    max-height: 600px;
-    border: 5px solid var(--dark);
-}
-
-.chairman {
-    width: 35%;
-    height: 40%;
-    margin-left: 5%;
-    margin-right: 10%
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    display: flex;
-    color: var(--dark);
-}
-
-h3 {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 1.5rem;
-}
-.matt-gammon {
-    width: 35%;
-    height: 60%;
-    justify-content: center;
 }
 
 .paragraph {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
+    max-width: 400px;
+    max-height: 600px;
+    
+}
 
+.members img {
+    width: 400px;
+    height: 530px;
+    border: 5px solid var(--dark);
+}
+
+@media only screen and (max-width: 786px) {
+    .members{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin-left: 2%;
+    }
+   
+    .members .paragraph , img{
+        width: 75%;
+        justify-items: center;
+    }
+    
 }
